@@ -1,7 +1,9 @@
 # movie-predictor
 
 Predict rating that a user would give to a movie (for example, on Netflix). This can be used to recommend movies to users. 
+
 Input: training data file and testing data file each containing 3 columns (user, movie, rating)
+
 Outut: rmse value and histogram of error from {1,2,3,4,5} using each predictor (baseline_predictor_error.png and improved_predictor_error.png) 
 
 Baseline prediction: The baseline predictor takes the average of all ratings and adds a user bias and movie bias. The user bias and movie bias are chosen such that it minimises the RMSE on the training data. A user may have a bias if he always rates movies higher or lower than the average. A movie could have a bias if it always tends to receive higher or lower ratings than others. 
